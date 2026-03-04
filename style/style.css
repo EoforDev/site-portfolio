@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+:root {
+    --color01: #f5f5f5; /* Branco */
+    --color02: #aa653f; /* Bege */
+    --color03: #355d80; /* Azul */
+    --color04: #19232c; /* Azul Escuro */
+    --color05: #050505; /* Preto */
+}
+
+body{
+    font-family: "Roboto", "Open Sans", sans-serif;
+    background-color: var(--color01);
+    color: var(--color04);
+}
+
+header{
+    width: 70%;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.perfil { /* Imagem do Perfil */
+    min-width: 10%;
+    max-width: 30%;
+    margin: 200px auto 30px auto;
+    border-radius: 100%;
+}
+
+header > h1 { /* Comprimento */ 
+    margin: 5px;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+header > h2 { /* Nome */
+    margin: 5px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+header > h3 { /* Profissão */
+    margin: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--color02);
+}
+
+header > h4 { /* Frase */ 
+    margin: 5px;
+    font-weight: normal;
+    font-size: 1rem;
+    color: var(--color03)
+}
+
+header > p { /* Seta */
+    margin: 50px 10px 100px 10px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color03);
+}
+
+.redessociais { /* Redes Sociais */
+    background-color: var(--color03);
+    max-width: 30px;
+    padding: 15px;
+    margin: 25px 5px 5px 5px;
+    border-radius: 20%;
+    display: inline-block;
+    object-fit: cover; /* Como funciona? */
+    transition: transform 0.2s ease; /* Como funciona? */
+}
+
+.redessociais:hover { /* Redes Sociais */
+    transform: scale(1.2); /* Como funciona? */
+    background-color: var(--color02);
+}
+
+main { /* Principal */
+    text-align: justify;
+    margin: 10%;
+}
+
+.sobre { /* Sobre mim */
+    padding: 25px;
+}
+
+main > .sobre > h1{ /* Titulos da Principal */
+    color: var(--color02);
+}
+
+main > .sobre > p > strong { /* Strong do Sobre Mim */
+    color: var(--color03);
+}
+
+.navegacao1 {
+    max-width: 100%;
+}
+
+.navegacao1 > a { /* Projetos */
+    background-color: var(--color03);
+    padding: 15px 50px;
+    max-width: 25%;
+    margin: 15px auto;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    transition: transform 0.2s ease; /* Como funciona? */
+    text-decoration: none;
+    color: var(--color01);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navegacao1 > a:hover{ /* Projetos */
+    color: var(--color01);
+    background-color: var(--color02);
+    font-weight: bolder;
+}
+
+.navegacao2{
+    margin: auto;
+}
+
+.navegacao2 > a {
+    display: inline-block;
+    background-color: var(--color03);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    width: 150px 100px;
+    text-align: center;
+    color: var(--color01);
+    border-radius: 10px;
+}
+
+.navegacao2 > a:hover{ /* Projetos */
+    font-weight: bold;
+    background-color: var(--color02);
+}
+
+.projetos { /* Projetos */
+    width: 80%;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+main > .projetos > h1 { /* Titulos dos Projetos */
+    color: var(--color02);
+}
+
+main > .projetos > h2 {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--color03);
+}
+
+main > .projetos > .descricao > p > strong { /* Strong dos Paragrafos da descrição */
+    color: var(--color02);
+}
+
+iframe { /* Videos do Youtube */
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.descricao { /* Descrições do Videos */
+    width: 80%;
+    max-width: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+.contatos { /* Contato Fundo */
+    padding: 20px;
+}
+
+.contato { /* Contato Fundo */
+    margin: 25px;
+    background-color: var(--color03);
+    max-width: 30px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20%;
+    display: inline-block;
+    object-fit: cover; /* Como funciona? */
+    transition: transform 0.2s ease; /* Como funciona? */
+}
+
+.contato:hover { /* Animação do Contato Fundo */
+    transform: scale(1.2); /* Como funciona? */
+    background-color: var(--color02);
+}
+
+footer { /* Rodapé */
+    margin: 20px auto;
+    text-align: center;
+    color: var(--color03);
+    font-size: 0.80rem;
+}
